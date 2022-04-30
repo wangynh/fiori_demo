@@ -7,3 +7,4 @@ keep this file
 add new credential
 2nd line
 3nd line
+manually run npm start  / npm start-mock
