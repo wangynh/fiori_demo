@@ -2,14 +2,14 @@
 
 specVersion: "2.5"
 metadata:
-  name: fiori.northwindui5
+  name: fiori.orders
 type: application
 server:
   customMiddleware:
     - name: fiori-tools-proxy
       afterMiddleware: compression
       configuration:
-        ignoreCertError: true # If set to true, certificate errors will be ignored. E.g. self-signed certificates will be accepted
+        ignoreCertError: false # If set to true, certificate errors will be ignored. E.g. self-signed certificates will be accepted
         ui5:
           path:
             - /resources
@@ -27,5 +27,5 @@ server:
     - name: fiori-tools-preview
       afterMiddleware: fiori-tools-appreload
       configuration:
-        component: fiori.northwindui5
+        component: fiori.orders
         ui5Theme: sap_fiori_3

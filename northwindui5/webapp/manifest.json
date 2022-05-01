@@ -101,7 +101,7 @@
                 },
                 {
                     "name": "detail",
-                    "pattern": "product/{productId}",
+                    "pattern": "products/{productId}",
                     "target": [
                         "TargetDetail"
                     ]
@@ -119,16 +119,16 @@
                     "viewType": "XML",
                     "transition": "slide",
                     "clearControlAggregation": false,
-                    "viewId": "List" ,                  
+                    "viewId": "ListView",
                     "viewName": "List"
                 },
                 "TargetDetail": {
                     "viewType": "XML",
                     "transition": "slide",
                     "clearControlAggregation": false,
-                    "viewId": "Detail",                          
+                    "viewId": "DetailView",
                     "viewName": "Detail"
-                }                                
+                }
             }
         },
         "rootView": {
