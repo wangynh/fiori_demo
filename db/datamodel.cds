@@ -9,5 +9,4 @@ entity orders
     unit: String(4);
     grossamount : Decimal;    
     currency : String(4);
-    createdon: Date;
 }
